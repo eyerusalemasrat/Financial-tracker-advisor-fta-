@@ -1,4 +1,4 @@
-# myapp2
+# FTA
 
 A new Flutter project.
 

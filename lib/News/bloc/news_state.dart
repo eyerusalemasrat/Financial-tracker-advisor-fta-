@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:login/News/news.dart';
+import 'package:FTA/News/News.dart';
 
 class NewsState extends Equatable {
   const NewsState();
@@ -11,12 +11,12 @@ class NewsState extends Equatable {
 class NewsLoading extends NewsState {}
 
 class NewssLoadSuccess extends NewsState {
-  final List<News> courses;
+  final List<News> Newss;
 
-  NewssLoadSuccess([this.courses = const []]);
+  NewssLoadSuccess([this.Newss = const []]);
 
   @override
-  List<Object> get props => [courses];
+  List<Object> get props => [Newss];
 }
 
 class NewsOperationFailure extends NewsState {}

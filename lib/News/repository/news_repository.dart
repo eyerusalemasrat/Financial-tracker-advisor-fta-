@@ -1,22 +1,21 @@
 import 'package:meta/meta.dart';
-import 'package:login/news/news.dart';
+import 'package:FTA/News/News.dart';
 
 class NewsRepository {
   final NewsDataProvider dataProvider;
 
-  NewsRepository({@required this.dataProvider})
-      : assert(dataProvider != null);
+  NewsRepository({@required this.dataProvider}) : assert(dataProvider != null);
 
-  Future<News> createNews(News news) async {
-    return await dataProvider.createNews(news);
+  Future<News> createNews(News News) async {
+    return await dataProvider.createNews(News);
   }
 
   Future<List<News>> getNewss() async {
     return await dataProvider.getNewss();
   }
 
-  Future<void> updateNews(News news) async {
-    await dataProvider.updateNews(news);
+  Future<void> updateNews(News News) async {
+    await dataProvider.updateNews(News);
   }
 
   Future<void> deleteNews(String id) async {
